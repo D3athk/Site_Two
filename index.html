@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <!-- Link do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       
+        body{
+            background: url('img/bg.jpg') center no-repeat fixed;
+            background-size: cover; 
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+        main {
+    flex: 1;
+    /* Este espaço se ajustará automaticamente */
+}
+
+footer {
+    background-color:#00CC00;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: transparent;
+        }
+        /* Estilo para o menu offcanvas */
+.offcanvas {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    color: #ffffff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Título do menu */
+.offcanvas-title {
+    font-size: 1.5rem; /* Tamanho do título */
+    font-weight: bold;
+    color:#00CC00; /* Cor do título */
+}
+
+/* Botão de fechar */
+.offcanvas .btn-close {
+    filter: invert(1); /* Muda a cor do botão para claro */
+    opacity: 0.8; /* Deixa o botão levemente transparente */
+}
+
+.offcanvas .btn-close:hover {
+    opacity: 1; /* Totalmente opaco ao passar o mouse */
+}
+
+/* Estilo para os itens do menu */
+.offcanvas .accordion-item {
+    background-color: transparent;
+    border: none;
+    margin: 30px 0; /* Espaçamento entre os itens */
+    text-align: center;
+}
+
+.offcanvas .accordion-item img {
+    width: 300px; /* Tamanho dos ícones do menu */
+    transition: transform 0.3s ease; /* Animação suave para o ícone */
+}
+
+.offcanvas .accordion-item img:hover {
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+
+/* Sombra do offcanvas */
+.offcanvas-end {
+    box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra à esquerda do menu */
+}
+@media (min-width: 992px) {
+    .menu-icon {
+        display: none; /* Oculta a imagem quando a tela é maior que 992px */
+    }
+}
+.accordion-item {
+    transition: transform 0.3s ease; /* Animação suave para o zoom */
+}
+
+.accordion-item:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do item em 10% quando o mouse está sobre ele */
+}
+.modal-dialog {
+    
+    max-width: 50%;
+}
+@media (max-width: 768px) { /* Ajuste este valor conforme necessário */
+    .modal-dialog {
+        max-width: 100%; /* Largura do modal em 100% em telas menores */
+        margin: 0; /* Remove a margem para melhor ajuste */
+    }
+}
+.modal-content {
+            background-color:rgba(255, 255, 255, 0.8); /* Cor de fundo do modal */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra ao redor do modal */
+        }
+        .flex-container {
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: row; /* Alinha os itens na horizontal */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte, se necessário */
+    margin: 20px; /* Espaço ao redor da flex-container */
+    font-weight: bold;
+}
+
+.flex-container img {
+    max-width: 100%; /* Garante que a imagem não exceda a largura do seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.flex-container p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    padding: 0; /* Remove o padding padrão do parágrafo */
+    flex: 1; /* Permite que o parágrafo use o espaço restante disponível */
+}
+/* Oculta a imagem por padrão */
+.mobile-only {
+    display: none;
+}
+
+/* Exibe a imagem apenas em telas com largura máxima de 576px (dispositivos móveis) */
+@media (max-width: 768px) {
+    .mobile-only {
+        display: block;
+        margin-left: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <main>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Conteúdo Principal -->
+        <div class="container-fluid text-center">
+            <h1 style="margin-top: 35px;"><img class="img-fluid" src="img/logo.png"></h1>
+            <div class="d-flex justify-content-center" style="margin-top: 20px;">
+                <div class="container-fluid" style="max-width: 560px;">
+                    <div class="ratio ratio-16x9 ustify-content-center">
+                        <iframe src="https://www.youtube.com/embed/Ligv-Sj5-Aw?si=dqShn06klJ5CsZaR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                        <img src="img/text.png" class="img-fluid mobile-only mx-auto" style="margin-top: 30px;">                    </div>
+                    </div>
+
+        <!-- Sidebar para Desktop -->
+        <div class="col-lg-3 d-none d-lg-flex sidebar align-items-center" style="margin-top: -270px;">
+            <div class="accordion" id="accordionExample">
+                <!-- Tópico 1 -->
+                <div style="background-color: transparent; border: none;" class="accordion-item">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#myModal"><img src="img/icon1.png" class="img-fluid"/></a>
+                </div>
+                <!-- Tópico 2 -->
+                <div style="background-color: transparent; border: none; margin-top: 25px;" class="accordion-item">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#myModal2"><img src="img/icon2.png" class="img-fluid"/></a>
+                </div>
+                <!-- Tópico 3 -->
+                <div style="background-color: transparent; border: none; margin-top: 25px;" class="accordion-item">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#myModal3"><img src="img/icon3.png" class="img-fluid"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sidebar Offcanvas para Mobile -->
+
+<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileSidebar" aria-labelledby="mobileSidebarLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileSidebarLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <!-- Conteúdo do menu offcanvas para Mobile -->
+        <div class="accordion">
+            <div class="accordion-item">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal"><img src="img/icon1.png" class="img-fluid"/></a>
+            </div>
+            <div class="accordion-item">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal2"><img src="img/icon2.png" class="img-fluid"/></a>
+            </div>
+            <div class="accordion-item">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal3"><img src="img/icon3.png" class="img-fluid"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----Nodal 1---->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel"><img src="img/icon1.png" class="img-fluid"/></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" style="color: white;" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="flex-container">
+                        <img src="img/perfil.png" class="img-fluid" alt="Perfil"/> <!-- Adiciona uma largura máxima para a imagem -->
+                        <strong><p style="color:black;">
+                            "Me chamo Icaro Rodrigues Shimazu e minha história começou com o 
+                            contato com as primeiras linguagens web. Hoje, desenvolvo em várias linguagens, 
+                            porém a web é minha favorita. Moro em Londrina-PR e tenho 32 anos. Gosto bastante de literatura 
+                            também e de escrever histórias e contos."
+
+                        </p></strong>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----Nodal 2---->
+    <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel"><img src="img/icon2.png" class="img-fluid"/></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" style="color: white;" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="flex-container">
+                        <a style="color: black; text-align: center;" href=""><img src="img/github.png" class="img-fluid" alt="Perfil"/> <!-- Adiciona uma largura máxima para a imagem -->
+                       <strong>Link dos projetos</strong></a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel"><img src="img/icon3.png" class="img-fluid"/></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="flex-container">
+                        <img src="img/email.png" class="img-fluid" style="margin-left: 0px;" alt="Perfil" width="120" height="60"/>  icaro3677@gmail.com
+                    </div>
+                    <div class="flex-container">
+                        <img src="img/whatsapp.png" style="margin-left: 0px;" class="img-fluid" alt="Perfil" width="120" height="60"/> (43)99969-8895
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Botão para abrir o Offcanvas no mobile -->
+<img src="img/menu-icon.png" alt="Abrir Menu" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar" aria-controls="mobileSidebar" width="133" height="50" class="menu-icon" style="position: fixed; top: 10px; right: 10px; width: 133px; height: 34px; cursor: pointer;"> 
+</button>
+<footer style="background-color:transparent; font-size: 25px; text-shadow: black 3px 3px 3px; color: #ffffff;  margin-top: 20px;"> &copy;Icaro Desenvolvedor Web</footer>
+
+<!-- Bootstrap JS e dependências -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
